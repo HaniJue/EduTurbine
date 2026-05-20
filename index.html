@@ -1,0 +1,504 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Fundamental</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo-container">
+        <img src="../Images/logo.jpg" class="logo" alt="Logo">
+        <a href="index.html" class="brand-name">EduTurbine</a>
+    </div>
+
+    <div class="nav-wrapper">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><b>Engine</b></a></li>
+            <li><a href="3d.html">3D Printing</a></li>
+            <li><a href="circuit.html">Arduino Circuit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- LANDING -->
+<section class="landing">
+    <h1>Gas Turbine Engine Fundamentals</h1>
+</section>
+
+<!--Part 1 -->
+<section class="section-bridge">
+
+    <h2>Introduction to Gas Turbine Engines</h2>
+
+    <div class="attribute-box">
+
+        <div class="attribute-item">
+            <h4>Definition</h4>
+            <p>
+                A gas turbine engine is an internal combustion engine that converts chemical energy from fuel into mechanical energy or thrust using a continuous flow of gas. 
+                It operates on the Brayton cycle and consists of three core sections: a compressor, a combustion chamber, and a turbine.
+            </p>
+            <br>
+            <p>
+                Unlike a piston engine that relies on intermittent explosions, a gas turbine draws in ambient air, compresses it, mixes it with fuel for a steady burn, and expands the high-velocity exhaust through turbine blades to generate power or jet propulsion. 
+                This continuous-flow mechanism allows them to deliver massive amounts of power relative to their size, making them the standard choice for powering modern commercial aircraft, military jets, and heavy industrial power plants.
+            </p>
+            <br>
+            <p>
+                Gas turbine engines are the backbone of modern aerospace engineering because they offer an unmatched combination of power, reliability, and speed that no other engine type can match.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="bridge-question">
+        Why gas turbine engines are important in aerospace engineering?
+    </div>
+
+    <div class="importance-box">
+
+        <h4>1. Incredible Power-to-Weight Ratio</h4>
+
+        <ul>
+            <li>
+                <b>The Factor:</b> They are lightweight but generate massive amounts of power.
+            </li>
+            <li>
+                <b>The Impact:</b> A piston engine large enough to power a commercial airliner would be too heavy to lift itself off the ground.
+            </li>
+        </ul>
+
+        <h4>2. High-Altitude and High-Speed Capability</h4>
+
+        <ul>
+            <li>
+                <b>The Factor:</b> They excel in thin air and at speeds approaching or exceeding the speed of sound.
+            </li>
+            <li>
+                <b>The Impact:</b> Gas turbines allow aircraft to cruise efficiently above the weather in the stratosphere, where commercial flight is most economical.
+            </li>
+        </ul>
+
+        <h4>3. Extreme Reliability</h4>
+        <ul>
+            <li> 
+                <b>The Factor:</b> They have fewer moving parts than piston engines and operate with continuous, smooth rotation rather than violent, reciprocating pistons.
+            </li>
+            <li> 
+                <b>The Impact:</b> They can operate safely for thousands of hours between maintenance overhauls, making long-haul transoceanic flights routine and safe.
+            </li>
+        </ul>
+
+        <h4>4. Continuous Operational Efficiency</h4>
+        <ul>
+            <li>
+                <b>The Factor:</b> They utilize the continuous Brayton Cycle instead of intermittent combustion strokes.
+            </li>
+            <li>
+                <b>The Impact:</b> This steady-state operation allows them to burn fuel far more efficiently over long distances than traditional engines.
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- Part 2 -->
+<section class="section-bridge">
+    <h2>Types of Gas Turbine Engines</h2>
+    
+    <div class="attribute-box-components">  
+
+        <!-- TURBOFAN-->
+        <div class="attribute-item-type"> 
+            <h4>Turbofan</h4>
+                <img src="../Images/turbofan.jpg" alt="Turbofan" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('turbofan-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="turbofan-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('turbofan-popup')">
+                    &times;
+                </span>
+                <h2>Turbofan Engine</h2>
+                <img src="../Images/a350.jpg" alt="Turbofan" class="popup-image">
+                <h3>Airbus A350</h3>
+                <p>
+                    <b>How it works:</b> A hybrid between a turbojet and a propeller. It features a massive ducted fan at the front. A small portion of the air goes through the engine core to keep it running, while the rest (the bypass air) flows around the core, generating massive amounts of extra thrust.
+                </p>
+                <p>
+                    <b>Best used for:</b> Modern commercial airliners (e.g., Boeing 737, Airbus A320) because they are highly fuel-efficient and quieter at subsonic speeds.
+                </p>
+            </div>
+        </div>
+
+        <!-- TURBOJET -->
+        <div class="attribute-item-type">
+            <h4>Turbojet</h4>
+            <img src="../Images/turbojet.jpg"
+                alt="Turbojet"
+                class="attribute-image-type">
+            <button class="popup-btn"
+                onclick="openPopup('turbojet-popup')">
+                See How It Works
+            </button>
+        </div>
+
+        <div class="popup-overlay" id="turbojet-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('turbojet-popup')">
+                    &times;
+                </span>
+                <h2>Turbojet Engine</h2>
+                <img src="../Images/turbojetdassaultrafale.jpg" alt="Turbojet" class="popup-image">
+                <h3>Dassault Rafale</h3>
+                <p>
+                    <b>How it works:</b> The simplest and earliest design. Nearly all the intake air is drawn through the core, compressed, combusted, and expelled out the back as a high-speed exhaust jet.
+                </p>
+                <p>
+                    <b>Best used for:</b> Supersonic military aircraft and fighter jets. They provide excellent thrust at extremely high altitudes and high speeds, but are incredibly noisy and heavy on fuel consumption at lower, everyday speeds.
+                </p>
+            </div>
+        </div>
+
+        <!-- TURBOPROP -->
+        <div class="attribute-item-type"> 
+            <h4>Turboprop</h4>
+                <img src="../Images/turboprop.jpg" alt="Turboprop" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('turboprop-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="turboprop-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('turboprop-popup')">
+                    &times;
+                </span>
+                <h2>Turboprop Engine</h2>
+                <img src="../Images/atr72.jpg" alt="Turboprop" class="popup-image">
+                <h3>ATR 72</h3>
+                <p>
+                    <b>How it works:</b> Similar to a jet engine, but the turbine is connected to a gearbox that spins a traditional external propeller. The expanding exhaust gases extract almost all their energy to turn the propeller, with only a small amount of leftover thrust coming from the exhaust.
+                </p>
+                <p>
+                    <b>Best used for:</b> Smaller regional passenger planes and cargo aircraft. They are highly efficient for short distances and slower cruising speeds.
+                </p>
+            </div>
+        </div>
+
+        <!-- TURBOSHAFT -->
+        <div class="attribute-item-type"> 
+            <h4>Turboshaft</h4>
+                <img src="../Images/turboshaft.jpg" alt="Turboshaft" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('turboshaft-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="turboshaft-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('turboshaft-popup')">
+                    &times;
+                </span>
+                <h2>Turboshaft Engine</h2>
+                <img src="../Images/turboshaftaw139.jpg" alt="Turboshaft" class="popup-image">
+                <h3>AW139</h3>
+                <p>
+                    Instead of driving a propeller or a fan, the turbine spins a drive shaft. In many designs, the power-producing turbine is completely separate from the turbine driving the compressor, giving the aircraft the flexibility to spin the driveshaft at a constant speed regardless of the engine's power output.
+                </p>
+                <p>
+                    Helicopters and tilt-rotor aircraft. The shaft connects to a transmission system to drive the main and tail rotors.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Part 3 -->
+ <section class="section-bridge">
+    <h2>Basic Working Principle</h2>
+    <p>The <b>Brayton Cycle</b> is the thermodynamic blueprint for how every gas turbine engine operates. It describes a continuous cycle of four steps, often summarized by the aviation phrase: <br>"Suck, Squeeze, Bang, Blow."</p>
+    <div class="brayton-images">
+        <img src="../Images/braytoncycle1.jpg" alt="Brayton Cycle Diagram" class="brayton-image">
+        <img src="../Images/braytoncycle2.jpg" alt="Brayton Cycle Process" class="brayton-image">
+    </div>
+
+    <div class="attribute-box">
+        <div class="attribute-item">
+            <h4>1. Air Intake</h4><h4>(Suck)</h4>
+            <p>
+                    <b>The Action:</b> The engine draws large volumes of ambient air into the front inlet.
+            <br>
+                    <b>The Goal:</b> Capture enough oxygen to sustain a continuous combustion process.
+            </p>
+        </div>
+
+        <div class="attribute-item">
+            <h4>2. Compression</h4><h4>(Squeeze)</h4>
+                <p>
+                    <b>The Action:</b> Spinning blades force the trapped air backward into increasingly tighter spaces.
+                </p>
+                <p>
+                    <b>The Goal:</b> Pack the air molecules together, dramatically raising air pressure and temperature.
+                </p>
+            </div>
+
+        <div class="attribute-item">
+            <h4>3. Combustion</h4><h4>(Bang)</h4>
+                <p>
+                    <b>The Action:</b> Fuel is continuously sprayed into the highly compressed air and ignited.
+                </p>
+                <p>
+                    <b>The Goal:</b> Create a massive release of heat energy, causing the air to expand rapidly.
+                </p>
+            </div>
+
+        <div class="attribute-item">
+            <h4>4. Expansion Through Turbine</h4><h4>(Blow - Part 1)</h4>
+                <p>
+                    <b>The Action:</b> The rushing, hot gas blasts through turbine blades, forcing them to spin.
+                </p>
+                <p>
+                        <b>The Goal:</b> Extract just enough energy from the gas to keep the front compressor spinning.
+                </p>
+        </div>
+
+        <div class="attribute-item">
+            <h4>5. Exhaust and Thrust Generation</h4><h4>(Blow - Part 2)</h4>
+            <p>
+                        <b>The Action:</b> The remaining high-energy gas shoots out the narrow rear nozzle.
+                <br>
+                        <b>The Goal:</b> Create the high-speed exhaust that triggers the forward reaction force (thrust).
+            </p>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-landscape">
+            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/6bo12veBMds?si=b2QCfzKgPaM8u2WW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</section>
+
+<!-- Part 4 -->
+
+<section class="section-bridge">
+    <h2>Main Components of a Gas Turbine Engine</h2>
+    <img src="../Images/completegasturbineengine.jpg" alt="Gas Turbine Components" class="full-width-image">
+    
+    <div class="attribute-box-components">  
+
+        <!-- FAN-->
+        <div class="attribute-item-type"> 
+            <h4>Fan</h4>
+                <img src="../Images/fan.jpg" alt="Fan" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('fan-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="fan-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('fan-popup')">
+                    &times;
+                </span>
+                <h2>Fan</h2>
+                <img src="../Images/3dfan.jpg" alt="3D Fan" class="popup-image">
+                <p>
+                    <b>Function:</b> Captures ambient air and delivers it smoothly to the compressor.
+                <br>
+                    <b>Location:</b> Located at the very front of the engine assembly.
+                <br>
+                    <b>Simple working principle:</b>  It slows down fast-moving oncoming air. This converts kinetic energy into stable pressure energy before the air hits the compressor.
+                <br>
+                    <b>Relation to other components:</b> Feeds conditioned air directly into the compressor inlet.
+                </p>
+            </div>
+        </div>
+
+        <!-- COMPRESSOR -->
+        <div class="attribute-item-type"> 
+            <h4>Compressor</h4>
+                <img src="../Images/compressor.jpg" alt="Compressor" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('compressor-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="compressor-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('compressor-popup')">
+                    &times;
+                </span>
+                <h2>Compressor</h2>
+                <img src="../Images/3dcompressor.jpg" alt="Compressor" class="popup-image">
+                <p>
+                    <b>Function:</b> Raises the pressure and density of the incoming air.
+                <br>
+                    <b>Location:</b> Positioned immediately behind the intake and ahead of the combustion chamber.
+                <br>
+                    <b>Simple working principle:</b> Spinning blades accelerate the air, while stationary blades slow it down to squeeze the molecules into a smaller volume.
+                <br>
+                    <b>Relation to other components:</b> Driven mechanically by the shaft, it supplies high-pressure air to the combustion chamber.
+                </p>
+            </div>
+        </div>
+
+        <!-- COMBUSTION CHAMBER -->
+        <div class="attribute-item-type"> 
+            <h4>Combustion Chamber</h4>
+                <img src="../Images/combustionchamber.jpg" alt="Combustion Chamber" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('combustion-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="combustion-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('combustion-popup')">
+                    &times;
+                </span>
+                <h2>Combustion Chamber</h2>
+                <img src="../Images/3dcombustionchamber.jpg" alt="Combustion Chamber" class="popup-image">
+                <p>
+                    <b>Function:</b> Adds thermal energy to the compressed air by burning fuel.
+                <br>
+                    <b>Location:</b> Sandwiched directly between the compressor and the turbine.
+                <br>
+                    <b>Simple working principle:</b>  Fuel is continuously sprayed into the pressurized airstream and ignited, creating a steady, high-temperature gas expansion.
+                <br>
+                    <b>Relation to other components:</b> Receives high-pressure air from the compressor and discharges high-energy gas into the turbine.
+                </p>
+            </div>
+        </div>
+
+        <!-- TURBINE -->
+        <div class="attribute-item-type"> 
+            <h4>Turbine</h4>
+                <img src="../Images/turbine.jpg" alt="Turbine" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('turbine-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="turbine-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('turbine-popup')">
+                    &times;
+                </span>
+                <h2>Turbine</h2>
+                <img src="../Images/3dturbine.jpg" alt="Turbine" class="popup-image">
+                <p>
+                    <b>Function:</b> Extracts mechanical energy from the hot, expanding gases.
+                <br>
+                    <b>Location:</b> Positioned immediately behind the combustion chamber.
+                <br>
+                    <b>Simple working principle:</b>  High-velocity gas flows over curved blades, forcing them to spin like a high-powered windmill.
+                <br>
+                    <b>Relation to other components:</b> Absorbs energy from the combustion chamber gases to rotate the shaft, which powers the compressor.
+                </p>
+            </div>
+        </div>
+
+        <!-- EXHAUST NOZZLE -->
+        <div class="attribute-item-type"> 
+            <h4>Exhaust Nozzle</h4>
+                <img src="../Images/exhaustnozzle.jpg" alt="Exhaust Nozzle" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('nozzle-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="nozzle-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('nozzle-popup')">
+                    &times;
+                </span>
+                <h2>Exhaust Nozzle</h2>
+                <img src="../Images/3dexhaustnozzle.jpg" alt="Exhaust Nozzle" class="popup-image">
+                <p>
+                    <b>Function:</b> Accelerates the spent gases backward to produce thrust or safely vent exhaust.
+                <br>
+                    <b>Location:</b> Located at the very rear end of the engine.
+                <br>
+                    <b>Simple working principle:</b> It constricts the exit path, forcing the expanding gas to speed up drastically as it exits into the atmosphere.
+                <br>
+                    <b>Relation to other components:</b> Receives the remaining gas pressure from the turbine to complete the thermodynamic cycle. 
+                </p>
+            </div>
+        </div>
+
+        <!-- SHAFT -->
+        <div class="attribute-item-type"> 
+            <h4>Shaft</h4>
+                <img src="../Images/shaft.jpg" alt="Shaft" class="attribute-image-type">
+                <button class="popup-btn" onclick="openPopup('shaft-popup')">
+                    See How It Works
+                </button>
+        </div>
+
+        <div class="popup-overlay" id="shaft-popup">
+            <div class="popup-content">
+                <span class="close-btn"
+                    onclick="closePopup('shaft-popup')">
+                    &times;
+                </span>
+                <h2>Shaft</h2>
+                <img src="../Images/3dshaft.jpg" alt="3D Shaft" class="popup-image">
+                <p>
+                    <b>Function:</b> Transmits rotational mechanical power through the center of the engine.
+                <br>
+                    <b>Location:</b> Runs centrally along the longitudinal axis, connecting the front and back components.
+                <br>
+                    <b>Simple working principle:</b> Acts as a rigid, spinning axle that links all rotating parts together.
+                <br>
+                    <b>Relation to other components:</b> Transfers the rotational energy produced by the turbine forward to spin the compressor and any external loads.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Footer load error:", error));
+</script>
+
+<script src="../Java/script.js"></script>
+
+</body>
+</html>
