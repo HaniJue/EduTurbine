@@ -807,20 +807,20 @@ body::before {
     .attribute-item,
     .attribute-item-type,
     .attribute-item-components {
-        padding: 18px;
+        padding: 12px;
     }
 
     .attribute-item p,
     .attribute-item-type p,
     .attribute-item-components p {
-        font-size: 0.92rem;
-        line-height: 1.6;
+        font-size: 0.75rem;
+        line-height: 1.4;
     }
 
     /* COMPONENT GRIDS */
     .attribute-box-components {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     /* IMAGES */
@@ -947,9 +947,14 @@ body::before {
         font-size: 1.2rem;
     }
 
+   .attribute-box-components {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
     .attribute-item h4,
     .attribute-item-type h4 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .popup-content {
