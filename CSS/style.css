@@ -63,7 +63,7 @@ body::before {
 .brand-name {
     color: #F5F7FA;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 700;
     white-space: nowrap;
     transition: 0.3s ease;
@@ -173,12 +173,12 @@ body::before {
     }
 
     .logo {
-        width: 15px;
+        width: 20px;
         height: auto;
     }
 
     .brand-name {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 
     .nav-links {
@@ -756,8 +756,7 @@ body::before {
     }
 
     .attribute-box-components {
-        grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+        grid-template-columns: 1fr;
     }
 
     .full-width-image {
@@ -820,8 +819,8 @@ body::before {
 
     /* COMPONENT GRIDS */
     .attribute-box-components {
-        grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     /* IMAGES */
@@ -839,8 +838,7 @@ body::before {
 
     /* BRAYTON IMAGES */
     .brayton-images {
-        grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+        grid-template-columns: 1fr;
     }
 
     .brayton-image {
