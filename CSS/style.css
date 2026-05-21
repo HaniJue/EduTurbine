@@ -173,12 +173,12 @@ body::before {
     }
 
     .logo {
-        width: 20px;
+        width: 10px;
         height: auto;
     }
 
     .brand-name {
-        font-size: 0.65rem;
+        font-size: 0.5rem;
     }
 
     .nav-links {
