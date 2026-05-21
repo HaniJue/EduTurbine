@@ -838,7 +838,8 @@ body::before {
 
     /* BRAYTON IMAGES */
     .brayton-images {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     .brayton-image {
