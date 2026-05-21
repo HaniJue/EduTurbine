@@ -756,7 +756,8 @@ body::before {
     }
 
     .attribute-box-components {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
     }
 
     .full-width-image {
@@ -819,8 +820,8 @@ body::before {
 
     /* COMPONENT GRIDS */
     .attribute-box-components {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
     }
 
     /* IMAGES */
@@ -838,7 +839,8 @@ body::before {
 
     /* BRAYTON IMAGES */
     .brayton-images {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
     }
 
     .brayton-image {
