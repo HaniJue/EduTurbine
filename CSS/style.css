@@ -63,7 +63,7 @@ body::before {
 .brand-name {
     color: #F5F7FA;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     white-space: nowrap;
     transition: 0.3s ease;
@@ -136,12 +136,12 @@ body::before {
     }
 
     .logo {
-        width: 25px;
+        width: 10px;
         height: auto;
     }
 
     .brand-name {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .nav-links {
